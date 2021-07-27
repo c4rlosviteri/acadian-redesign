@@ -1,0 +1,14 @@
+<svg
+  {{#if viewBox}} viewBox="{{viewBox}}"{{/if}}
+  {{#if width}}width="{{width}}"{{/if}}
+  {{#if height}}height="{{height}}"{{/if}}
+  {{#unless aria-label}}role="presentation"{{/unless}}
+  {{#if aria-label}}aria-label="{{aria-label}}"{{/if}}
+>
+{{#if svgHref}}
+  <use xlink:href="{{svgHref}}" />
+{{else}}
+  <use xlink:href="#{{name}}" />
+{{/if}}
+</svg>
+
