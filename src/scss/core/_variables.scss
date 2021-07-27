@@ -8,9 +8,13 @@ $mq-breakpoints: (
 :root {
   #{--color-teal}: #447a89;
   #{--color-navy}: #003453;
+  #{--color-dazzle-blue}: #2d608b;
+  #{--color-oxford-blue}: #002941;
   #{--color-anthracite}: #171a21;
   #{--color-light-blue}: #56c5e5;
   #{--color-yellow}: #f4b333;
+  #{--color-white}: #ffffff;
+  #{--color-gray-quartz}: #4a4a4a;
   #{--color-gray}: #898a8d;
   #{--color-gray-100}: #f2f2f2;
   #{--color-gray-200}: #dedede;
@@ -29,6 +33,8 @@ $mq-breakpoints: (
   #{--font-copy-large}: normal 1.125rem/1.66 var(--font-dm-sans);
   #{--font-copy-small}: normal 0.875rem/1.57 var(--font-dm-sans);
   #{--font-captions}: normal 0.75rem/1.33 var(--font-dm-sans);
+  #{--font-link}: normal 1.125rem/1.66 var(--font-dm-sans);
+  #{--font-link-small}: normal 0.875rem/1.57 var(--font-dm-sans);
 }
 
 @include mq(desktop) {

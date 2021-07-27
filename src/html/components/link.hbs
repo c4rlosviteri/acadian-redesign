@@ -1,3 +1,9 @@
 <a{{#if classes}} class="{{classes}}"{{/if}}{{#if target}} target="{{target}}"{{/if}} href="{{link}}">
+  {{#if leftIcon}} 
+  {{>svg name="next-arrow" width="20" height="20" viewBox="0 0 360 360"}}
+  {{/if}}
   {{title}}
+  {{#if rightIcon}} 
+  {{>svg name="next-arrow" width="20" height="20" viewBox="0 0 360 360"}} 
+  {{/if}}
 </a>
