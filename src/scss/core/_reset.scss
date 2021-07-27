@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-anthracite);
+  font-family: var(--font-dm-sans);
+  font-size: 16px;
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font: var(--font-h1);
+}
+
+h2 {
+  font: var(--font-h2);
+}
+
+h3 {
+  font: var(--font-h3);
+}
+
+h4 {
+  font: var(--font-h4);
+}
+
+h5 {
+  font: var(--font-h5);
+}
+
+h6 {
+  font: var(--font-h6);
+}
+
+p {
+  font: var(--font-copy-large);
+}

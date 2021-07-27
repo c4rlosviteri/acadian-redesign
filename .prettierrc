@@ -1,0 +1,22 @@
+{
+  "semi": false,
+  "trailingComma": "none",
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ["**/*.css", "**/*.scss", "**/*.hbs"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["**/*.css", "**/*.scss"],
+      "options": {
+        "printWidth": 1000
+      }
+    }
+  ]
+}
