@@ -1,5 +1,5 @@
 .link {
-  color: var(--color-dazzle-blue);
+  color: var(--color-teal);
   cursor: pointer;
   font: var(--font-link);
   text-align: left;
@@ -7,6 +7,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     text-decoration: underline;  
   }
 }
@@ -15,7 +16,7 @@
   font: var(--font-link-small);
 
   &.link--dark {
-    color: var(--color-gray-quartz);
+    color: var(--color-gray-500);
   }
 
   &.link--right-icon {
@@ -38,7 +39,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-dazzle-blue);
+    color: var(--color-teal);
   }
 }
 
@@ -84,7 +85,6 @@
 }
 
 .link--on-dark {
-  background: var(--color-oxford-blue);
   color: var(--color-white);
 
   &:hover,

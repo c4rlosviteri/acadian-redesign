@@ -1,6 +1,9 @@
-<button{{#if classes}} class="{{classes}}"{{/if}}>
+{{#if href}}<a{{else}}<button{{/if}}
+  {{#if target}} target="{{target}}"{{/if}}
+  class="btn{{#if classes}} {{classes}}{{/if}}{{#if disabled}} btn--disabled{{/if}}"
+  {{#if href}}href="{{href}}"{{/if}}
+  {{#if disabled}}disabled{{/if}}
+  {{#unless href}}type="{{#if type}}{{type}}{{else}}button{{/if}}"{{/unless}}
+>
   {{title}}
-  <svg>
-    <use xlink:href="#arrow-right"/>
-  </svg>
-</button>
+{{#if href}}</a>{{else}}</button>{{/if}}

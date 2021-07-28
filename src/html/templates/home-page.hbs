@@ -11,22 +11,41 @@
 
     {{>button title="Button text" classes="btn btn--primary"}}
     {{>list items='["item 1", "item 2"]' }}
+    <div style="display:flex; flex-direction:column">
+    {{>link title="Large text link"}} 
+    {{>link classes="link--small" title="Small text link"}} 
+    {{>link classes="link--dark" title="Large text dark"}} 
+    {{>link classes="link--dark link--small" title="Small text dark"}} 
+    {{>link classes="link--left-icon" leftIcon="true" title="Link left icon"}} 
+    {{>link classes="link--left-icon link--small" leftIcon="true" title="Link small left icon"}} 
+    {{>link classes="link--right-icon" rightIcon="true" title="Link right icon"}} 
+    {{>link classes="link--right-icon link--small" rightIcon="true" title="Link small right icon"}} 
+    </div>
 
-    {{>link classes="link" title="Large text link"}} 
-    {{>link classes="link link--small" title="Small text link"}} 
-    {{>link classes="link link--on-dark" title="Large text link on dark"}} 
-    {{>link classes="link link--on-dark link--small" title="Small text link on dark"}} 
-    {{>link classes="link link--dark" title="Large text dark"}} 
-    {{>link classes="link link--dark link--small" title="Small text dark"}} 
-    {{>link classes="link link--left-icon" leftIcon="true" title="Link left icon"}} 
-    {{>link classes="link link--left-icon link--on-dark" leftIcon="true" title="Link left icon on dark"}} 
-    {{>link classes="link link--left-icon link--small" leftIcon="true" title="Link small left icon"}} 
-    {{>link classes="link link--left-icon link--on-dark link--small" leftIcon="true" title="Link small left icon on dark"}} 
-    {{>link classes="link link--right-icon" rightIcon="true" title="Link right icon"}} 
-    {{>link classes="link link--right-icon link--on-dark" rightIcon="true" title="Link right icon on dark"}} 
-    {{>link classes="link link--right-icon link--small" rightIcon="true" title="Link small right icon"}} 
-    {{>link classes="link link--right-icon link--on-dark link--small" rightIcon="true" title="Link small right icon on dark"}} 
+    <div style= "background: var(--color-navy); display:flex; flex-direction:column">
+    {{>link classes="link--on-dark" title="Large text link on dark"}} 
+    {{>link classes="link--on-dark link--small" title="Small text link on dark"}} 
+    {{>link classes="link--left-icon link--on-dark" leftIcon="true" title="Link left icon on dark"}} 
+    {{>link classes="link--left-icon link--on-dark link--small" leftIcon="true" title="Link small left icon on dark"}} 
+    {{>link classes="link--right-icon link--on-dark" rightIcon="true" title="Link right icon on dark"}} 
+    {{>link classes="link--right-icon link--on-dark link--small" rightIcon="true" title="Link small right icon on dark"}} 
+    </div>
 
+    {{>button title="Default"}}
+    {{>button disabled="true" title="Disabled"}}
+    {{>button classes="btn--large" title="Large"}}
+    {{>button classes="btn--large" disabled="true" title="Large"}}
+    {{>button classes="btn--outline" title="Large"}}
+    {{>button classes="btn--large btn--outline" title="Large"}}
+
+    <div style= "background: var(--color-navy);">
+  
+    {{>button classes="btn--on-dark" title="Large"}}
+    {{>button classes="btn--large btn--on-dark" title="Large"}}
+    {{>button classes="btn--outline btn--on-dark" title="Large"}}
+    {{>button classes="btn--large btn--outline btn--on-dark" title="Large"}}
+    </div>
+    </div>
     <div>
       <svg>
         <use xlink:href="#arrow-right"/>
